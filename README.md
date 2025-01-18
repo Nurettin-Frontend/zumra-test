@@ -15,6 +15,12 @@ npm install
 npm run dev
 ```
 
+2. Build the app
+
+```bash
+npm run build
+```
+
 ### Stuff used
 - NuxtJS
 - Sass
