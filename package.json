@@ -1,7 +1,7 @@
 {
 	"private": true,
 	"scripts": {
-		"build": "nuxt build",
+		"build": "nuxt generate",
 		"dev": "nuxt dev",
 		"generate": "nuxt generate",
 		"reset": "rm -rf .nuxt node_modules .output package-lock.json && npm install",
