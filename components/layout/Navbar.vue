@@ -1,23 +1,23 @@
 <template>
   <VAppBar :elevation="1" rounded class="py-2">
-    <VContainer px-0 px-sm-2 class="px-0">
+    <VContainer px-0 px-sm-2 class="px-1">
       <div class="d-flex justify-space-between">
-        <NuxtLink class="d-flex align-center text-decoration-none" to="/">
+        <NuxtLink class="d-flex align-center text-decoration-none" to="/" v-if="!$vuetify.display.mobile">
           <VImg
             src="/global/logo.png"
             :class="currentTheme == 'dark' ? 'light-img' : ''"
             width="200"
             class="mx-1"
-            v-if="!$vuetify.display.mobile"
+            
           ></VImg>
         </NuxtLink>
-        <NuxtLink class="d-flex align-center text-decoration-none" to="/">
+        <NuxtLink class="d-flex align-center text-decoration-none" to="/" v-if="$vuetify.display.mobile">
           <VImg
             src="/favicon.png"
             :class="currentTheme == 'dark' ? 'light-img' : ''"
             class="mx-1"
             width="40"
-            v-if="$vuetify.display.mobile"
+            
           ></VImg>
         </NuxtLink>
         <div class="d-flex align-center mx-2">
