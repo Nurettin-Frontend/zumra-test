@@ -1,0 +1,52 @@
+export default {
+  arabic: "العربية",
+  english: "English",
+
+  signIn: "Sign In",
+  enterDetails: "Enter your details to get started",
+  forAccountDetails: `For Login please use this account's details`,
+
+  lightMode: "Light Mode",
+  darkMode: "Dark Mode",
+  loading: "Loading",
+  logout: "Logout",
+  loginSignup: "Login / Signup",
+
+  dashboard: "Dashboard",
+  users: "Users",
+  analyticsSide: "Analytics",
+  copyRight1: "Copyright",
+  copyRight2: "ZumraFood",
+  update: "update ",
+  addNew: "Add New ",
+  user: "User",
+  addNewUser: "Add New User",
+  areYouSureDelete: "Are you sure you want to delete",
+  BS: "BS",
+  catchPhrase: "catch Phrase",
+  city: "City",
+  street: "Street",
+  suite: "Suite",
+  zipcode: "Zipcode",
+  somethingWentWrong: "Something went wrong...",
+  loading: "Loading...",
+  actions: 'Actions',
+  id: 'ID',
+  filters: 'Filters',
+  filterBy: 'Filter By',
+
+  form: {
+    email: "Email Address",
+    password: "Password",
+    name: "Name",
+    phone: "Phone",
+    username: "Username",
+    website: "Website",
+    delete: "Delete",
+    cancel: "Cancel",
+  },
+
+  analytics: {
+    title: "User Registration Trends (Last 5 Weeks)",
+  },
+};
