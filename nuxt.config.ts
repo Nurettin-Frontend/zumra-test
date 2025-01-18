@@ -7,6 +7,7 @@ const url = "https://zumrahub.com";
 
 export default defineNuxtConfig({
   ssr: true,
+  target: 'static',
   css: ["@/assets/main.scss", "@mdi/font/css/materialdesignicons.min.css"],
 
   build: {
