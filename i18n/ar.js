@@ -10,7 +10,7 @@ export default {
   darkMode: "الوضع الداكن",
   loading: "جارٍ التحميل",
   logout: "تسجيل الخروج",
-  loginSignup: "تسجيل الدخول / إنشاء حساب",
+  loginSignup: "تسجيل الدخول",
 
   dashboard: "لوحة التحكم",
   users: "المستخدمون",
