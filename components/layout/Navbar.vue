@@ -1,13 +1,23 @@
 <template>
   <VAppBar :elevation="1" rounded class="py-2">
-    <VContainer px-0 px-sm-3>
+    <VContainer px-0 px-sm-2 class="px-0">
       <div class="d-flex justify-space-between">
         <NuxtLink class="d-flex align-center text-decoration-none" to="/">
           <VImg
             src="/global/logo.png"
             :class="currentTheme == 'dark' ? 'light-img' : ''"
             width="200"
-            class="mr-2"
+            class="mx-1"
+            v-if="!$vuetify.display.mobile"
+          ></VImg>
+        </NuxtLink>
+        <NuxtLink class="d-flex align-center text-decoration-none" to="/">
+          <VImg
+            src="/favicon.png"
+            :class="currentTheme == 'dark' ? 'light-img' : ''"
+            class="mx-1"
+            width="40"
+            v-if="$vuetify.display.mobile"
           ></VImg>
         </NuxtLink>
         <div class="d-flex align-center mx-2">
@@ -38,16 +48,16 @@
           >
             <VBtn
               variant="outlined"
-              class="mx-3"
+              class="mx-2"
               @click="$router.push('/profile/users')"
               >{{ userDetails.fullName }}</VBtn
             >
-            <VBtn variant="outlined" @click="logoutHandler">{{
-              $t("logout")
-            }}</VBtn>
+            <VBtn variant="outlined" @click="logoutHandler"><v-icon>mdi-logout</v-icon></VBtn>
           </div>
           <NuxtLink to="/login" v-if="!userDetails?.fullName && !userLoading">
-            <VBtn variant="outlined" color="black_">{{ $t("loginSignup") }}</VBtn>
+            <VBtn variant="outlined" color="black_">{{
+              $t("loginSignup")
+            }}</VBtn>
           </NuxtLink>
         </div>
       </div>

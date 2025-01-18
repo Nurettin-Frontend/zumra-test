@@ -10,7 +10,7 @@ export default {
   darkMode: "Dark Mode",
   loading: "Loading",
   logout: "Logout",
-  loginSignup: "Login / Signup",
+  loginSignup: "Login",
 
   dashboard: "Dashboard",
   users: "Users",

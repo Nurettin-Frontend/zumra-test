@@ -114,7 +114,6 @@ const headers = ref([
   { title: "form.name", key: "name", sortable: false, minWidth: 300 },
   { title: "form.email", key: "email", sortable: false, minWidth: 300 },
   { title: "form.phone", key: "phone", sortable: false, minWidth: 300 },
-  { title: "form.username", key: "username", sortable: false, minWidth: 300 },
   { title: "form.website", key: "website", sortable: false, minWidth: 300 },
   { title: "actions", key: "actions", align: "center", sortable: false },
 ]);
@@ -215,7 +214,7 @@ onMounted(async () => {
 }
 
 .custom-table td {
-  min-width: 200px; /* Ensure mobile column has appropriate width */
+  min-width: 180px; /* Ensure mobile column has appropriate width */
 }
 .custom-table td:nth-child(1) {
   min-width: min-content !important;

@@ -84,3 +84,11 @@ ul {
 .light-img{
   filter: brightness(0) invert(1);
 }
+
+.v-btn { 
+  text-transform: none !important;
+}
+
+.v-container {
+  max-width: 1400px !important;
+}

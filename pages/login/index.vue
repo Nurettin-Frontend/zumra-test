@@ -1,11 +1,11 @@
 <template>
-  <h1>{{ $t("signIn") }}</h1>
-  <p class="text-medium-emphasis">{{ $t("enterDetails") }}</p>
+  <h1 class="font-28">{{ $t("signIn") }}</h1>
+  <p class="text-medium-emphasis font-18 ">{{ $t("enterDetails") }}</p>
 
   <VForm ref="loginForm" @submit.prevent="submitHandler" class="mt-7">
     <div class="mt-3">
       <VTextField
-        :label="$t('form.emailAddress')"
+        :label="$t('form.email')"
         :rules="[ruleRequired, ruleEmail]"
         v-model="obj.email"
         id="email"

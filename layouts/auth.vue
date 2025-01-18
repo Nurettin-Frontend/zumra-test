@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="my-5">
     <VApp>
       <LayoutNavbar />
       <VMain>
@@ -10,7 +10,7 @@
             justify="space-between"
             class="fill-height"
           >
-            <VCol cols="12" md="3" sm="6">
+            <VCol cols="12" md="4" sm="6">
               <slot :key="$route.name" />
             </VCol>
             <VCol
@@ -22,7 +22,7 @@
               <VImg 
                 aspect-ratio="1/1"
                 cover
-                width="700"
+                width="600"
                 class="mx-auto rounded-lg"
                 src="/auth-bg.png"
               ></VImg>
@@ -31,7 +31,7 @@
                 <span class="d-block text-black  font-weight-medium font-28"
                   >Next Day Delivery</span
                 >
-                <p class="mt-2 text-black  font-weight-regular font-20">
+                <p class="mt-2 text-black  font-weight-regular font-18">
                   ZumraFood, an online platform bringing Asian cuisine to Egypt
                 </p>
               </div>
