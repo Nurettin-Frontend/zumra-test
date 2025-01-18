@@ -46,7 +46,8 @@ const checkActive = (val) => {
 };
 
 const logoutHandler = async () => {
-  //   localStorage.removeItem("token");
+  localStorage.removeItem("token");
+  localStorage.removeItem("userDetails");
   router.go(0);
 };
 </script>
